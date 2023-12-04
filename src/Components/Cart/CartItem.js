@@ -14,24 +14,29 @@ function CartItem({cartItem}) {
 	}
 	
 	return (
-      <div>
-        <div>
-          <img src={cartItem.image} alt=""></img>
-        </div>
-        <div>
-          <h1>{cartItem.title}</h1>
-          <h1>{cartItem.description}</h1>
-        </div>
-        <div>
-          <h1>{cartItem.price}</h1>
-        </div>
-        <div>
+    <div >
+      <div >
+        <img src={cartItem.image} alt="" className="object-cover "></img>
+      </div>
+      <div >
+        <h1 >
+          {cartItem.title}
+        </h1>
+        <h1 >
+          {cartItem.description}
+        </h1>
+      </div>
+      <div >
+        <h1 >{cartItem.price}</h1>
+
+        <div >
           <button onClick={removeItem}>
             Remove Item <RiDeleteBin6Line />
           </button>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default CartItem;
