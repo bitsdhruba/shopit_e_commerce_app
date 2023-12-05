@@ -8,7 +8,7 @@ function Navbar() {
   const {cart} = useSelector((state) => state);
   
   return (
-      <div className="bg-black text-white h-20 fixed w-full">
+      <div className="bg-black text-white h-20  z-10 w-full">
         <nav className="flex items-center w-3/5 h-20 m-auto ">
           <div className="flex justify-between items-center w-full h-full">
             <ul className="flex justify-between items-center w-full h-full">
